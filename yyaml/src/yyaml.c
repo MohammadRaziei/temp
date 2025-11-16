@@ -1306,7 +1306,7 @@ YYAML_API yyaml_doc *yyaml_read(const char *data, size_t len,
 
 fail_nomem:
     yyaml_set_error(err, pos, line, col, "out of memory");
-fail:
+بزاریfail:
     yyaml_doc_free(doc);
     return NULL;
 }
@@ -1586,21 +1586,6 @@ static bool yyaml_writer_write_double(yyaml_writer *wr, double val) {
     }
     len = snprintf(tmp, sizeof(tmp), "%.17g", val);
     if (len < 0) return false;
-
-    // bool has_decimal = false;
-    // for (int i = 0; i < len; ++i) {
-    //     char c = tmp[i];
-    //     if (c == '.' || c == 'e' || c == 'E') {
-    //         has_decimal = true;
-    //         break;
-    //     }
-    // }
-
-    // if (!has_decimal && len + 2 < (int)sizeof(tmp)) {
-    //     tmp[len++] = '.';
-    //     tmp[len++] = '0';
-    //     tmp[len] = '\0';
-    // }
 
     return yyaml_writer_write(wr, tmp, (size_t)len);
 }
