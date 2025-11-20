@@ -1,0 +1,8 @@
+baseURL: https://matusnovak.github.io/doxybook2/hugo-book
+languageCode: en-us
+title: Doxybook2 Example
+theme: hugo-book
+pygmentsCodeFences: true
+params:
+  BookMenuBundle: /menu
+

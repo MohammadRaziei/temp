@@ -1,0 +1,13 @@
+site_name: Doxybook2 Example
+theme:
+  name: 'flatly'
+markdown_extensions:
+  - admonition
+nav:
+  - Home: /doxybook2/mkdocs-bootswatch/
+  - Classes: /doxybook2/mkdocs-bootswatch/Classes
+  - Namespaces: /doxybook2/mkdocs-bootswatch/Namespaces
+  - Modules: /doxybook2/mkdocs-bootswatch/Modules
+  - Files: /doxybook2/mkdocs-bootswatch/Files
+  - Related Pages: /doxybook2/mkdocs-bootswatch/Pages
+  - Examples: /doxybook2/mkdocs-bootswatch/Examples
